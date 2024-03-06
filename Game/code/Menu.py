@@ -21,8 +21,8 @@ class Menu:
             self.menu_text(50, "Mountain", (255, 128, 0), ((WIN_WIDTH / 2), 70))
             pygame.display.flip()
 
-        def menu_text(self, text_size: int, text: str, text_color: tuple, text_center_pos: tuple):
-            text_font: Font = pygame.font.SysFont("Lucida Sans Tywriter", size=text_size)
-            text_surf: Surface = text_font.render(text, True, text_color)
-            text_rect: Rect = text_surf.get_rect(center=text_center_pos)
-            self.window.blit(source=text_surf, dest=text_rect)
+                        def menu_text(self, text_size: int, text: str, text_color: tuple, text_center_pos: tuple):
+                            text_font: Font = pygame.font.SysFont("Lucida Sans Tywriter", size=text_size)
+                            text_surf: Surface = text_font.render(text, True, text_color)
+                            text_rect: Rect = text_surf.get_rect(center=text_center_pos)
+                            self.window.blit(source=text_surf, dest=text_rect)
